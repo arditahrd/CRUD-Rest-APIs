@@ -28,8 +28,10 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         zipcode: {
-            type: Sequelize.INTEGER        }
+            type: Sequelize.INTEGER
+        }
     });
 
     return Malay;
+
 };

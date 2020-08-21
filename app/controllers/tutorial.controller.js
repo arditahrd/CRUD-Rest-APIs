@@ -17,19 +17,19 @@ exports.create = (req, res) => {
         // title: req.body.title,
         // description: req.body.description,
         // published: req.body.published ? req.body.published : false
-        province : req.body.province,
-        lat : req.body.lat,
-        long : req.body.long,
-        cases : req.body.cases,
-        date : req.body.date,
-        streetname : req.body.streetname,
-        city : req.body.city,
-        country : req.body.country,
-        ccountrycode : req.body.countrycode,
-        zipcode : req.body.zipcode
+        province: req.body.province,
+        lat: req.body.lat,
+        long: req.body.long,
+        cases: req.body.cases,
+        date: req.body.date,
+        streetname: req.body.streetname,
+        city: req.body.city,
+        country: req.body.country,
+        ccountrycode: req.body.countrycode,
+        zipcode: req.body.zipcode
     };
 
-    // Save Tutorial in the database
+    //Save Tutorial in the database
     Malay.create(data_malay_ver3)
         .then(data => {
             res.send(data);
@@ -42,12 +42,12 @@ exports.create = (req, res) => {
         });
 };
 
-// Retrieve all Tutorials from the database.
+//Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
     //const province = req.query.province;
     //var condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
 
-    Tutorial.findAll({  })
+    Tutorial.findAll({})
         .then(data => {
             res.send(data);
         })
