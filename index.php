@@ -8,16 +8,16 @@
 <body>
     <form action="http://localhost:8080/api/malay" method="post">
         <label for="lat">Latitude</label>
-        <input type="number" name="lat" id="" step="0.00001"> <br>
+        <input type="number" name="lat" id="" step="0.00000001"> <br>
 
         <label for="long">Longitude</label>
-        <input type="number" name="long" id="" step="0.00001"> <br>
+        <input type="number" name="long" id="" step="0.0000001"> <br>
     
         <label for="cases">Apakah di wilayah anda terdapat?</label>
         <select name="cases" id="">
             <option value="0">Tidak</option>
             <option value="1">Iya</option>
-            <option value="null">Mungkin</option>
+            <option value=''>Mungkin</option>
         </select>
         <br>
         <input type="submit" value="Insert">
